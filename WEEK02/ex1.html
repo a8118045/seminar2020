@@ -1,14 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script>
+        function calc() {
+            var x = document.getElementById('win-count').value;
+            x = Number(x);
+            var y = docment.getElementById('lose-count').value;
+            y = Number(y);
+            var z = x + y
+            document.getElementById('win-rate').value = z;
+        }
+    </script>
 </head>
 
 <body>
-    <p>あ</p>
+    <input id="win-count" type="text">
+    <input id="lose-count" type="text">
+    <button onclick="calc()">=</button>
+    <input id="win-rate" type="text">
 
 </body>
 
