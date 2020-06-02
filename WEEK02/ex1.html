@@ -2,13 +2,13 @@
 
 <head>
     <script>
-        function calc() {
-            var x = document.getElementById('win-count').value;
-            x = Number(x);
-            var y = docment.getElementById('lose-count').value;
-            y = Number(y);
-            var z = x + y
-            document.getElementById('win-rate').value = z;
+        function calculate() {
+            var w = document.getElementById('win-count').value;
+            w = Number(w);
+            var l = document.getElementById('lose-count').value;
+            l = Number(l);
+            var r = w / (w + l) * 100;
+            document.getElementById('win-rate').value = r;
         }
     </script>
 </head>
@@ -16,8 +16,8 @@
 <body>
     <input id="win-count" type="text">
     <input id="lose-count" type="text">
-    <button onclick="calc()">=</button>
-    <input id="win-rate" type="text">
+    <button onclick="calculate()">=</button>
+    <input id="win-rate" type="text">%
 
 </body>
 
