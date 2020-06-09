@@ -1,5 +1,5 @@
 function buttonAPressed() {
-    var x = document.getElementById('textfield').innerHTML;
+    var x = document.getElementById('textfield').value;
     var html = ''
     for (var i = 1; i <= x; i++) {
         var y = 1
